@@ -47,7 +47,7 @@ const productElements = document.getElementById("products");
 const listPorduct = () => {
   const reulst = productList
     .map(function (product) {
-      return ` <div class="border-2">
+      return ` <div class="border-2 hover:border-red-500">
             <div class="my-4">
             <a href=""><img
             src="${product.img}"
