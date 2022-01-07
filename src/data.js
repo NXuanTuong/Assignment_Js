@@ -1,22 +1,22 @@
-export const menuList = ["Menu 1", "Menu 2", "Menu 3"];
+export const menuList = ["Trang chủ", "Tuyển sinh", "Chương trình đào tạo","Góc sinh viên", "Tuyển dụng"];
 
 export const productList = [
   {
     id: 1,
-    name: "Xin chào!",
+    title: "Vinh danh 295 sinh viên FPT Polytechnic học kì Spring 2018",
     img: "https://picsum.photos/260/190",
-    price: "200đ",
+    document: "Tối ngày 16/06/2018, Cao đẳng FPT Polytechnic Hà Nội đã tổ chức Lễ tôn vinh “Ong vàng Poly”,tuyên dương 295 cá nhân và tập thể có thành tích xuất sắc trong học tập cũng như hoạt",
   },
   {
     id: 2,
-    name: "Xin chào!",
+    title: "Sinh viên khối ngành Kinh tế học cách “chạm” vào cảm xúc",
     img: "https://picsum.photos/260/190",
-    price: "200đ",
+    document: "Với sự tham gia của chuyên gia trong lĩnh vực kinh doanh, chương trình đã thu hút đông đảo sinh viên Cao đẳng FPT Polytechnic tham dự.Đặc biệt các bạn sinh viên bị lôi cuốn bởi",
   },
   {
     id: 3,
-    name: "Xin chào!",
+    title: "Sinh viên khối ngành Kinh tế học cách “chạm” vào cảm xúc",
     img: "https://picsum.photos/260/190",
-    price: "200đ",
+    document: "Với sự tham gia của chuyên gia trong lĩnh vực kinh doanh, chương trình đã thu hút đông đảo sinh viên Cao đẳng FPT Polytechnic tham dự.Đặc biệt các bạn sinh viên bị lôi cuốn bởi",
   },
 ];
