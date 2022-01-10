@@ -11,19 +11,19 @@ const Listmenu = {
         </div>
       </div>
       <div class="bg-[#cb7802] flex">
-      <div class="mx-4 my-2">
-                        <ul class="flex px-3 flex-warp">
-            ${menuList
-              .map((menuItem) => 
-                `
-                          <li>
-                            <a href="#" class="menu_link hover:border-b">${menuItem}</a>
-                          </li>
+        <div>
+            <ul class="flex">
+                ${menuList
+                .map((menuItem) => 
                     `
-              )
-              .join("")} 
-                </ul>
-            </div>
+                            <li>
+                                <a href="/" class="menu_link hover:bg-blue-500">${menuItem}</a>
+                            </li>
+                        `
+                )
+                .join("")} 
+            </ul>
+        </div>
             <div class="my-2">
                         <form action="" class="flex">
                           <input type="text" class="input_search" />

@@ -1,4 +1,4 @@
-import {productList} from "../data";
+import { productList } from "../data";
 
 const NewList = {
   print() {
