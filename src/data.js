@@ -1,4 +1,31 @@
-export const menuList = ["Trang chủ", "Tuyển sinh", "Chương trình đào tạo","Góc sinh viên", "Tuyển dụng"];
+export const menuList = [
+  {
+    id: 1,
+    name: "Home Page",
+    router: ""
+  },
+  {
+    id: 2,
+    name: "About",
+    router: "about"
+  },
+  {
+    id: 3,
+    name: "Chương trình đào tạo",
+    router: ""
+  },
+  {
+    id: 4,
+    name: "Góc sinh viên",
+    router: ""
+  },
+  {
+    id: 5,
+    name: "Tuyển sinh",
+    router: ""
+  },
+
+];
 
 export const productList = [
   {

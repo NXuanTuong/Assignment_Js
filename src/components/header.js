@@ -17,7 +17,7 @@ const Listmenu = {
                 .map((menuItem) => 
                     `
                             <li>
-                                <a href="/" class="menu_link hover:bg-blue-500">${menuItem}</a>
+                                <a href="/${menuItem.router}" class="menu_link hover:bg-blue-500">${menuItem.name}</a>
                             </li>
                         `
                 )
