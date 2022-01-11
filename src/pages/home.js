@@ -12,7 +12,6 @@ const HomePage = {
   <div class="my-3">
     ${Banner.print()}
   </div>
-
   <h2 class="title-item">Tin tức học tập</h2>
   <div id="product" class="item-cols">
     ${NewList.print()}

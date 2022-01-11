@@ -1,4 +1,3 @@
-import { menuList } from "../data";
 
 const Listmenu = {
   print() {
@@ -13,15 +12,23 @@ const Listmenu = {
       <div class="bg-[#cb7802] flex">
         <div>
             <ul class="flex">
-                ${menuList
-                .map((menuItem) => 
-                    `
-                            <li>
-                                <a href="/${menuItem.router}" class="menu_link hover:bg-blue-500">${menuItem.name}</a>
-                            </li>
-                        `
-                )
-                .join("")} 
+            <li>
+            <a href="/" class="menu_link hover:bg-blue-500">Trang chủ</a>
+          </li>
+          <li>
+            <a href="/about" class="menu_link hover:bg-blue-500">Tuyển sinh</a>
+          </li>
+          <li>
+            <a href="/news" class="menu_link hover:bg-blue-500"
+              >Chương trình đào tạo</a
+            >
+          </li>
+          <li>
+            <a href="/contact" class="menu_link hover:bg-blue-500">Góc sinh viên</a>
+          </li>
+          <li>
+            <a href="" class="menu_link hover:bg-blue-500">Tuyển dụng</a>
+          </li>
             </ul>
         </div>
             <div class="my-2">

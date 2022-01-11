@@ -15,7 +15,7 @@ router.on({
   },
   "/about": () => {
     render(AboutPage);
-  }
+  },
 });
 
 router.resolve();
