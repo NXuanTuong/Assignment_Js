@@ -6,9 +6,8 @@ import NewList from "../components/news";
 const HomePage = {
   print() {
     return /* html */ `
-    <header>
-    ${Listmenu.print()}
-    </header>
+    <div class = "max-w-5xl m-auto">
+    <head>${Listmenu.print()}</head>
   <div class="my-3">
     ${Banner.print()}
   </div>
@@ -24,7 +23,7 @@ const HomePage = {
   <footer class="footer">
     ${Footer.print()}
   </footer>
-        <br>
+        </div>
         `;
   },
 };

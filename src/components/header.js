@@ -16,18 +16,21 @@ const Listmenu = {
             <a href="/" class="menu_link hover:bg-blue-500">Trang chủ</a>
           </li>
           <li>
-            <a href="/about" class="menu_link hover:bg-blue-500">Tuyển sinh</a>
+            <a href="/about" class="menu_link hover:bg-blue-500">Giới Thiệu</a>
           </li>
           <li>
-            <a href="/news" class="menu_link hover:bg-blue-500"
-              >Chương trình đào tạo</a
+            <a href="/content" class="menu_link hover:bg-blue-500"
+              >Tin tức</a
             >
           </li>
           <li>
-            <a href="/contact" class="menu_link hover:bg-blue-500">Góc sinh viên</a>
+            <a href="/signin" class="menu_link hover:bg-blue-500">Đăng nhập</a>
           </li>
           <li>
-            <a href="" class="menu_link hover:bg-blue-500">Tuyển dụng</a>
+            <a href="/signup" class="menu_link hover:bg-blue-500">Đăng ký</a>
+          </li>
+          <li>
+            <a href="/admin/dashboard" class="menu_link hover:bg-blue-500">Quản trị</a>
           </li>
             </ul>
         </div>

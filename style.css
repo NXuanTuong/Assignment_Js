@@ -4,7 +4,7 @@
 
 /* --------Start Header-------- */
 .container {
-  @apply max-w-5xl m-auto;
+  @apply max-w-full m-auto;
 }
 .logo {
   @apply bg-[#272f54] py-4;
