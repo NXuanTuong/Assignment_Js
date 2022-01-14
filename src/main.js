@@ -3,12 +3,12 @@ import HomePage from "./pages/home";
 import AboutPage from "./pages/about";
 import content from "./pages/content";
 import detailsNew from "./pages/detailNew";
-import DashBoard from "./pages/dashboard";
 import SignIn from "./pages/signin";
-import NewsAdmin from "./pages/newsAdmin";
-import AddNews from "./pages/addnews";
-import EditNews from "./pages/editNew";
 import SignUp from "./pages/signup";
+import DashBoard from "./pages/admin/dashboard";
+import NewsAdmin from "./pages/admin/news/newsAdmin";
+import AddNews from "./pages/admin/news/addnews";
+import EditNews from "./pages/admin/edits/editNew";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
