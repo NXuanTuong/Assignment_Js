@@ -4,8 +4,9 @@ import { ListCustomer } from "../../../data";
 const EditNews = {
     print(id) {
         const result = ListCustomer.find((post) => post.id === id);
-        return /*html*/`
+        return /* html */`
         ${HeaderAdmin.print()}
+        <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <div class="lg:flex lg:items-center lg:justify-between">
         <div class="flex-1 min-w-0">
@@ -26,6 +27,7 @@ const EditNews = {
         </div>
         </div>
         </div>
+        </header>
         <div class="mt-10 max-w-5xl m-auto">
           <div class="mt-5 md:mt-0 md:col-span-2">
             <form action="#" method="POST">
@@ -81,7 +83,7 @@ const EditNews = {
             </form>
           </div>
         </div>
-        `
-    }
-}
+        `;
+    },
+};
 export default EditNews;

@@ -5,7 +5,7 @@ import { productList } from "../data";
 const detailsNew = {
     print(id) {
         const result = productList.find((post) => post.id === id);
-        return /*html*/ `
+        return /* html */ `
         <div class = "max-w-5xl m-auto">
         <header>
             ${Listmenu.print()}

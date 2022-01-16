@@ -1,10 +1,12 @@
 import HeaderAdmin from "../../../components/headerAdmin";
 import { ListCustomer } from "../../../data";
+
 const NewsAdmin = {
     print() {
-        return /*html*/ `
+        return /* html */ `
         ${HeaderAdmin.print()}
         <!-- This example requires Tailwind CSS v2.0+ -->
+        <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
 <div class="lg:flex lg:items-center lg:justify-between">
 <div class="flex-1 min-w-0">
@@ -25,6 +27,7 @@ const NewsAdmin = {
 </div>
 </div>
 </div>
+</header>
             <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="flex flex-col max-w-7xl mx-auto mt-8">
 <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -50,7 +53,8 @@ const NewsAdmin = {
             </th>
           </tr>
         </thead>
-        ${ListCustomer.map((post) => `
+        ${ListCustomer.map(
+        (post) => `
         <tbody class="bg-white divide-y divide-gray-200">
           <tr>
             <td class="px-6 py-4 whitespace-nowrap">
@@ -87,14 +91,15 @@ const NewsAdmin = {
 
           <!-- More people... -->
         </tbody>
-        `) .join("")}
+        `,
+    ).join("")}
       </table>
       
     </div>
   </div>
 </div>
 </div>
-        `
-    }
-}
+        `;
+    },
+};
 export default NewsAdmin;

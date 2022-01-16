@@ -3,8 +3,8 @@ import Listmenu from "../components/header";
 import NewList from "../components/news";
 
 const content = {
-  print() {
-    return /*html*/ ` 
+    print() {
+        return /* html */ ` 
             <div class = "max-w-5xl m-auto">
             <header>
                 ${Listmenu.print()}
@@ -22,6 +22,6 @@ const content = {
             </footer>
             </div>
         `;
-  },
+    },
 };
 export default content;

@@ -1,6 +1,6 @@
 const SignIn = {
-  print() {
-    return /*html*/ `
+    print() {
+        return /* html */ `
   
     <div class="flex items-center justify-center min-h-screen bg-gray-100">
     <div class="px-8 py-6 mx-4 mt-4 text-left bg-white shadow-lg md:w-1/3 lg:w-1/3 sm:w-1/3">
@@ -32,6 +32,6 @@ const SignIn = {
 </div>
 
         `;
-  },
+    },
 };
 export default SignIn;

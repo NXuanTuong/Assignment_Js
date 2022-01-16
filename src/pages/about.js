@@ -1,4 +1,3 @@
-import Banner from "../components/banner";
 import Footer from "../components/footer";
 import Listmenu from "../components/header";
 
@@ -17,6 +16,6 @@ const AboutPage = {
         <br>
         </div>
     `;
-    } 
-}
+    },
+};
 export default AboutPage;

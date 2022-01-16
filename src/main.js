@@ -12,43 +12,44 @@ import EditNews from "./pages/admin/edits/editNew";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
+// eslint-disable-next-line no-shadow
 const render = (content) => {
-  // document.getElementById("header").innerHTML = Listmenu.print();
-  document.getElementById("app").innerHTML = content;
-}; 
+    // document.getElementById("header").innerHTML = Listmenu.print();
+    document.getElementById("app").innerHTML = content;
+};
 
 router.on({
-  "/": () => {
-    render(HomePage.print());
-  },
-  "/about": () => {
-    render(AboutPage.print());
-  },
-  "/content": () => {
-    render(content.print());
-  },
-  "/content/:id": ({ data : { id } }) => {
-      // const {id} = data;
-      render(detailsNew.print(id));
-  },
-  "/signin": () => {
-    render(SignIn.print());
-  },
-  "/signup": () => {
-    render(SignUp.print());
-  },
-  "/admin/dashboard": () => {
-    render(DashBoard.print());
-  },
-  "/admin/news": () => {
-    render(NewsAdmin.print());
-  },
-  "/admin/news/add": () => {
-    render(AddNews.print());
-  },
-  "/admin/news/:id/edit": ({data : { id } }) => {
-    render(EditNews.print(id));
-  }
+    "/": () => {
+        render(HomePage.print());
+    },
+    "/about": () => {
+        render(AboutPage.print());
+    },
+    "/content": () => {
+        render(content.print());
+    },
+    "/content/:id": ({ data: { id } }) => {
+        // const {id} = data;
+        render(detailsNew.print(id));
+    },
+    "/signin": () => {
+        render(SignIn.print());
+    },
+    "/signup": () => {
+        render(SignUp.print());
+    },
+    "/admin/dashboard": () => {
+        render(DashBoard.print());
+    },
+    "/admin/news": () => {
+        render(NewsAdmin.print());
+    },
+    "/admin/news/add": () => {
+        render(AddNews.print());
+    },
+    "/admin/news/:id/edit": ({ data: { id } }) => {
+        render(EditNews.print(id));
+    },
 });
 
 router.resolve();

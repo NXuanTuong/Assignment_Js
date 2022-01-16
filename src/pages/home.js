@@ -4,8 +4,8 @@ import Listmenu from "../components/header";
 import NewList from "../components/news";
 
 const HomePage = {
-  print() {
-    return /* html */ `
+    print() {
+        return /* html */ `
     <div class = "max-w-5xl m-auto">
     <head>${Listmenu.print()}</head>
   <div class="my-3">
@@ -25,6 +25,6 @@ const HomePage = {
   </footer>
         </div>
         `;
-  },
+    },
 };
 export default HomePage;

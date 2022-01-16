@@ -1,7 +1,6 @@
-
 const Listmenu = {
-  print() {
-    return /* html */ `
+    print() {
+        return /* html */ `
         <div>
         <div class="logo">
           <a href="#">
@@ -42,6 +41,6 @@ const Listmenu = {
                       </div>
             </div>
         `;
-  },
+    },
 };
 export default Listmenu;

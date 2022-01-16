@@ -1,10 +1,10 @@
 import { productList } from "../data";
 
 const NewList = {
-  print() {
-    return `
+    print() {
+        return `
         ${productList
-          .map(
+        .map(
             (post) => `
             <div class="border-2">
                 <div class="my-4">
@@ -17,10 +17,10 @@ const NewList = {
                     <p class="main-documment">${post.document}</p>
                 </div>
             </div>
-        `
-          )
-          .join("")}
+        `,
+        )
+        .join("")}
     `;
-  },
+    },
 };
 export default NewList;
