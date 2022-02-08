@@ -1,25 +1,25 @@
+import { get } from "../api/user";
 import Footer from "../components/footer";
 import Listmenu from "../components/header";
-import { productList } from "../data";
 
 const detailsNew = {
-    print(id) {
-        const result = productList.find((post) => post.id === id);
-        return /* html */ `
+    async print(id) {
+        const { data } = await get(id);
+        return `
         <div class = "max-w-5xl m-auto">
         <header>
             ${Listmenu.print()}
         </header>
         <div class = "m-auto mt-3 text-center">
-             <h1>${result.title}</h1>
-            <img src="${result.img}" alt="" class = "m-auto mt-3 mb-3">
-            <p>${result.document}</p>
+             <h1>${data.title}</h1>
+            <img src="${data.img}" alt="" class = "m-auto mt-3 mb-3">
+            <p>${data.name}</p>
         </div>
            
             <footer class = "footer">
                 ${Footer.print()}
             </footer>
-            </div>
+            </div>)
         `;
     },
 };

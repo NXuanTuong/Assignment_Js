@@ -4,7 +4,7 @@ import Listmenu from "../components/header";
 import NewList from "../components/news";
 
 const HomePage = {
-    print() {
+    async print() {
         return /* html */ `
     <div class = "max-w-5xl m-auto">
     <head>${Listmenu.print()}</head>
@@ -13,11 +13,11 @@ const HomePage = {
   </div>
   <h2 class="title-item">Tin tức học tập</h2>
   <div id="product" class="item-cols">
-    ${NewList.print()}
+    ${await NewList.print()}
     </div>
     <h2 class="title-item">Hoạt động sinh viên</h2>
   <div id="product" class="item-cols">
-    ${NewList.print()}
+    ${await NewList.print()}
     </div>
 
   <footer class="footer">

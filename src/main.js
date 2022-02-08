@@ -2,53 +2,56 @@ import Navigo from "navigo";
 import HomePage from "./pages/home";
 import AboutPage from "./pages/about";
 import content from "./pages/content";
-import detailsNew from "./pages/detailNew";
 import SignIn from "./pages/signin";
 import SignUp from "./pages/signup";
 import DashBoard from "./pages/admin/dashboard";
 import NewsAdmin from "./pages/admin/news/newsAdmin";
 import AddNews from "./pages/admin/news/addnews";
 import EditNews from "./pages/admin/edits/editNew";
+import detailsNew from "./pages/detailNew";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
 // eslint-disable-next-line no-shadow
-const render = (content) => {
+const render = async (content, id) => {
     // document.getElementById("header").innerHTML = Listmenu.print();
-    document.getElementById("app").innerHTML = content;
+    document.getElementById("app").innerHTML = await content.print(id);
+    if (content.afterPrint) {
+        content.afterPrint(id);
+    }
 };
 
 router.on({
     "/": () => {
-        render(HomePage.print());
+        render(HomePage);
     },
     "/about": () => {
-        render(AboutPage.print());
+        render(AboutPage);
     },
     "/content": () => {
-        render(content.print());
+        render(content);
     },
-    "/content/:id": ({ data: { id } }) => {
+    "/content/:id": (value) => {
         // const {id} = data;
-        render(detailsNew.print(id));
+        render(detailsNew, value.data.id);
     },
     "/signin": () => {
-        render(SignIn.print());
+        render(SignIn);
     },
     "/signup": () => {
-        render(SignUp.print());
+        render(SignUp);
     },
     "/admin/dashboard": () => {
-        render(DashBoard.print());
+        render(DashBoard);
     },
     "/admin/news": () => {
-        render(NewsAdmin.print());
+        render(NewsAdmin);
     },
     "/admin/news/add": () => {
-        render(AddNews.print());
+        render(AddNews);
     },
-    "/admin/news/:id/edit": ({ data: { id } }) => {
-        render(EditNews.print(id));
+    "/admin/news/:id/edit": (value) => {
+        render(EditNews, value.data.id);
     },
 });
 
