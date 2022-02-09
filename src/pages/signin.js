@@ -74,6 +74,7 @@ style="background-image: url(https://blog.curnonwatch.com/wp-content/uploads/202
                 email: document.querySelector("#email").value,
                 password: document.querySelector("#password").value,
             });
+            console.log(response);
         });
     },
 };
