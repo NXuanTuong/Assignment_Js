@@ -10,7 +10,17 @@ export const get = (id) => {
     return instance.get(url);
 };
 
-export const add = (post) => {
-    const url = "/posts/";
-    return instance.get(url, post);
+export const add = (user) => {
+    const url = "/posts";
+    return instance.post(url, user);
+};
+
+export const remove = (id) => {
+    const url = `/posts/${id}`;
+    return instance.delete(url);
+};
+
+export const update = (user) => {
+    const url = `/posts/${user.id}`;
+    return instance.put(url, user);
 };

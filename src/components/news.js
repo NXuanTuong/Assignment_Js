@@ -1,4 +1,4 @@
-import { getAll } from "../api/user";
+import { getAll } from "../api/post";
 
 const NewList = {
     async print() {

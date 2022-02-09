@@ -1,4 +1,4 @@
-import { get } from "../api/user";
+import { get } from "../api/post";
 import Footer from "../components/footer";
 import Listmenu from "../components/header";
 

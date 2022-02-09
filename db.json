@@ -1,5 +1,5 @@
 {
-  "user": [
+  "posts": [
     {
       "name": "Perry Schmeler",
       "position": "Supervisor",
@@ -233,6 +233,24 @@
       "country": "Nam Cao",
       "status": "Ngung Hoat Dong",
       "id": "hxXuFCH"
+    },
+    {
+      "name": "Nguyễn Xuân",
+      "position": "Tường",
+      "email": "AA",
+      "image": "https://res.cloudinary.com/dn1renaek/image/upload/v1644300653/Image_ass/xqljby1gltgachdzeesx.png",
+      "country": "DD",
+      "status": "AS",
+      "id": "6fGDB3j"
+    }
+  ],
+  "users": [
+    {
+      "email": "tuongbabynhok@gmail.com",
+      "password": "$2a$10$QsZKsBbqXReG5iFNbt16eO7A281JYxGLqYCcyK5c5FRPX.Mm..jY6",
+      "name": "Nguyễn Xuân Tường",
+      "confirmpassword": "123456",
+      "id": 1
     }
   ]
 }

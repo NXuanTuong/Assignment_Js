@@ -1,5 +1,5 @@
 import axios from "axios";
-import { add } from "../../../api/user";
+import { add } from "../../../api/post";
 import HeaderAdmin from "../../../components/headerAdmin";
 
 const AddNews = {

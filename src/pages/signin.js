@@ -1,3 +1,5 @@
+import { signin } from "../api/user";
+
 const SignIn = {
     print() {
         return /* html */ `
@@ -22,17 +24,17 @@ style="background-image: url(https://blog.curnonwatch.com/wp-content/uploads/202
         <span class="text-gray-500 font-normal">OR</span>
         <span class="h-px w-16 bg-gray-300"></span>
     </div>
-    <form class="mt-8 space-y-6" action="#" method="POST">
+    <form class="mt-8 space-y-6" id="form-signin" action="#" method="POST">
         <input type="hidden" name="remember" value="true">
         <div class="relative">
             <label class="text-sm font-bold text-gray-700 tracking-wide">Email</label>
-            <input class=" w-full text-base py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" type="" placeholder="*VD: mail@gmail.com|" onfocus="this.placeholder = ''" onblur="this.placeholder = '*VD: mail@gmail.com|'" value="">
+            <input id="email" class=" w-full text-base py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" type="" placeholder="*VD: mail@gmail.com|" onfocus="this.placeholder = ''" onblur="this.placeholder = '*VD: mail@gmail.com|'" value="">
         </div>
         <div class="mt-8 content-center">
             <label class="text-sm font-bold text-gray-700 tracking-wide">
                 Password
             </label>
-            <input class="w-full content-center text-base py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" type="" placeholder="*VD: *****|" onfocus="this.placeholder = ''" onblur="this.placeholder = '*VD: *****|'" value="">
+            <input id="password" class="w-full content-center text-base py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" type="" placeholder="*VD: *****|" onfocus="this.placeholder = ''" onblur="this.placeholder = '*VD: *****|'" value="">
         </div>
         <div class="flex items-center justify-between">
                 <div class="flex items-center">
@@ -62,6 +64,17 @@ style="background-image: url(https://blog.curnonwatch.com/wp-content/uploads/202
 </div>
 
         `;
+    },
+    afterPrint() {
+        const signIn = document.querySelector("#form-signin");
+        signIn.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const response = await signin({
+                email: document.querySelector("#email").value,
+                password: document.querySelector("#password").value,
+            });
+        });
     },
 };
 export default SignIn;

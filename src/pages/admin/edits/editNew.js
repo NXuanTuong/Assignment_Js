@@ -1,4 +1,4 @@
-import { get, update } from "../../../api/user";
+import { get, update } from "../../../api/post";
 import HeaderAdmin from "../../../components/headerAdmin";
 
 const EditNews = {

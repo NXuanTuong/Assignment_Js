@@ -1,4 +1,4 @@
-import { getAll, remove } from "../../../api/user";
+import { getAll, remove } from "../../../api/post";
 import HeaderAdmin from "../../../components/headerAdmin";
 
 const NewsAdmin = {
